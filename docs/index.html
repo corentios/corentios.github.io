@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Elfyr's iOS Repo</title>
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-  <link rel="manifest" href="/assets/images/site.webmanifest">
-  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
-</head>
-<body>
+  <head>
+    <title>Elfyr's iOS Repo</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <style>
+      body {
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
 
-<h1>Welcome</h1>
-<p>On Elfyr's Repo</p>
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
 
-</body>
-</html>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+
+      .col {
+        flex: 1;
+        max-width: 33.33%;
+        padding: 0 10px;
+      }
+
+      .card {
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: box-shadow .2s ease-in-out;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .14), 0 16px 24px rgba(0, 0, 0, .08);
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .card a {
+        display: block;
+        text-align: center;
+        background-color: #2196f3;
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color .2s ease-in-out;
+      }
+
+      .card a:hover {
+        background-color: #1976d2;
+      }
+
+      .card img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .col {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Elfyr's Repo</h1>
+      <p>Add my source to your favorite package manager</p>
+      </br>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Icon_Sileo.png" alt="Sileo">
+            <h2>Sileo</h2>
+            <a href="sileo://source/https://elfyr.dev/repo/">Add</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://getzbra.com/assets/zeeb.svg" alt="Package 1 Icon">
+            <h2>Zebra</h2>
+            <a href="zbra://sources/add/https://elfyr.dev/repo/">Add</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt="Cydia">
+            <h2>Cydia</h2>
+            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://elfyr.dev/repo/">Add</a>
+          </div>
+        </div>
