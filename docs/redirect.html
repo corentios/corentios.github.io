@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Get the query parameters from the URL
       const urlParams = new URLSearchParams(window.location.search);
       const origin = urlParams.get("origin");
       const destination = urlParams.get("destination");
       const departureTime = urlParams.get("departureTime");
 
-      // Construct the redirect URL
       const redirectUrl = `captaintrain://search/${origin}/${destination}/${departureTime}`;
 
-      // Redirect the user to the Captain Train app
       window.location.replace(redirectUrl);
     </script>
   </head>
