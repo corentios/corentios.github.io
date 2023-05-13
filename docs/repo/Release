@@ -3,10 +3,10 @@ Label: Elfyr's Repo
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm
+Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Description: iOS Tweaks
+Description: A simple iOS Tweak Repo!
 
 SHA256:
- 6a998e4f3f447dd1f84d9d79d09f340628efa7e0b1d1d6cb33b79c0ad40c12f7 554 Packages.bz2
- 888ff1355b34607aeeccec3d525d100aa3f4ae7b952c2c717942b0da51a50edf 560 Packages.xz
+ 69418175ac4b469b6870b08c721104ab730e492952f225215bf2b8cda357a8f4 571 Packages.bz2
+ 034913c82a6c6cfacf224687d3ace0f8e26935defba7b6cb47a0b67537f9ee52 568 Packages.xz
